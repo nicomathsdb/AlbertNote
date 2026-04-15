@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert - Canvas vers PDF LaTeX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Écrire votre texte</h1>
+        
+        <!-- La barre d'outils -->
+        <div class="toolbar">
+            <button id="penBtn" class="tool-btn active">✏️ Stylo</button>
+            <button id="eraserBtn" class="tool-btn">🧽 Gomme</button>
+			<button id="panBtn" class="tool-btn">✋ Déplacer</button>
+            
+            <div class="tool-options">
+                <label for="sizeSlider">Épaisseur :</label>
+                <input type="range" id="sizeSlider" min="1" max="50" value="3">
+                
+                <label for="colorPicker">Couleur :</label>
+                <select id="colorPicker" class="color-select">
+                    <option value="black" selected>Noir</option>
+                    <option value="blue">Bleu</option>
+                    <option value="red">Rouge</option>
+                    <option value="green">Vert</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="canvas-viewport" id="canvasViewport">
+            <!-- Le canva est maintenant beaucoup plus grand -->
+            <canvas id="drawingCanvas" width="1000" height="1500"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button id="clearBtn" class="btn-secondary">🗑️ Tout effacer</button>
+            <button id="convertBtn" class="btn-primary">Générer le PDF</button>
+        </div>
+
+        <div id="loading" class="hidden">Analyse et compilation en cours...</div>
+
+        <div class="result-container">
+            <h3>Code LaTeX généré :</h3>
+            <pre id="latexCode">Le code apparaîtra ici...</pre>
+            
+            <h3>Résultat PDF :</h3>
+            <iframe id="pdfFrame" name="pdfFrame" src="about:blank"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# ------------------------------------
+# Fichiers sensibles (SÉCURITÉ)
+# ------------------------------------
+.dev.vars
+
+# ------------------------------------
+# Cloudflare / Wrangler
+# ------------------------------------
+# Dossier de cache et de génération locale de Wrangler
+.wrangler/
+
+# ------------------------------------
+# Dépendances Node.js
+# ------------------------------------
+node_modules/
+
+# ------------------------------------
+# Fichiers Système
+# ------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.cab
+
+# ------------------------------------
+# Éditeurs de code / IDE
+# ------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
