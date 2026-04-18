@@ -154,6 +154,7 @@ document.getElementById('convertBtn').addEventListener('click', async () => {
     const base64Image = canvas.toDataURL('image/jpeg', 1.0); // Qualité max
 
     loading.classList.remove('hidden');
+	latexCodeEl.innerText = "Le code apparaîtra ici...";
     pdfFrame.src = "about:blank";
     
     try {
