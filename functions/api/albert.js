@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
 					IMPORTANT : Utilise \dfrac pour les fractions, le package esvect pour les vecteurs.
 					Respecte les couleurs de texte mais n'en rajoute pas.
 					Ne rajoute rien que ce qui est sur l'image et/ou ne corrige pas les erreurs.
-                    Ne renvoie QUE le code LaTeX brut, sans texte d'introduction ni de conclusion. Code complet avec préambule.`
+                    Ne renvoie QUE le code LaTeX brut, sans texte d'introduction ni de conclusion. Code complet avec préambule.`;
         
         const albertPayload = {
             model: "openweight-medium", 
@@ -40,7 +40,7 @@ Règles :
 - Respecte les couleurs de texte mais n'en rajoute pas.
 
 RÈGLE SUR LES COMMENTAIRES : L'utilisateur peut écrire des indications sur l'image pour t'aider à interpréter certains symboles. Ces indications sont TOUJOURS encadrées par des DOUBLES crochets, comme ceci : [[ c'est un alpha ]] ou [[ x, pas un fois ]].
-                    Tu dois utiliser ces indications pour comprendre le texte, mais TU NE DOIS JAMAIS les inclure ni les traduire dans le code LaTeX final. Ignore complètement le texte entre DOUBLES crochets dans ta production, par contre traite les SIMPLES crochets normalement.`;
+                    Tu dois utiliser ces indications pour comprendre le texte, mais TU NE DOIS JAMAIS les inclure ni les traduire dans le code LaTeX final. Ignore complètement le texte entre DOUBLES crochets dans ta production, par contre traite les SIMPLES crochets normalement.`
 
                 },
                 {
